@@ -57,7 +57,8 @@
     <field name="priority" eval="1"/>
     <field name="arch" type="xml">
       <tree>
-       <!-- todo: add the appropriate field -->
+        <field name="mood"/>
+        <field name="note"/>
       </tree>
     </field>
   </record>
@@ -68,7 +69,12 @@
     <field name="priority" eval="1"/>
     <field name="arch" type="xml">
       <tree>
-       <!-- todo: add the appropriate field -->
+          <field name="worker"/>
+          <field name="activity"/>
+          <field name="startTime"/>
+          <field name="endTime"/>
+          <field name="rate"/>
+          <field name="note"/>
       </tree>
     </field>
   </record>

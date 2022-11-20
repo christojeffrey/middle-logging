@@ -75,7 +75,8 @@
       <form>
         <sheet>
           <group>
-             <!-- todo: add the appropriate field -->
+            <field name="mood"/>
+            <field name="note"/>
           </group>
         </sheet>
       </form>
@@ -90,7 +91,12 @@
       <form>
         <sheet>
           <group>
-             <!-- todo: add the appropriate field -->
+              <field name="worker"/>
+              <field name="activity"/>
+              <field name="startTime"/>
+              <field name="endTime"/>
+              <field name="rate"/>
+              <field name="note"/>
           </group>
         </sheet>
       </form>
