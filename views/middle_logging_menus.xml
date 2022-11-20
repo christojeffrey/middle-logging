@@ -19,25 +19,25 @@
     </record> -->
 
     <record id="action_list_team_activity" model="ir.actions.act_window">
-        <field name="name">Daftar aktivitas Tim </field>
+        <field name="name">Daftar Aktivitas Tim </field>
         <field name="res_model">middle.logging.team.activity</field>
         <field name="view_mode">tree,form</field>
     </record>
 
     <record id="action_list_client_feedback" model="ir.actions.act_window">
-        <field name="name">Daftar feedback client</field>
+        <field name="name">Daftar Feedback Client</field>
         <field name="res_model">middle.logging.client.feedback</field>
         <field name="view_mode">tree,form</field>
     </record>
 
     <record id="action_list_worker_activity" model="ir.actions.act_window">
-        <field name="name">Daftar aktivitas pekerja</field>
+        <field name="name">Daftar Aktivitas Pekerja</field>
         <field name="res_model">middle.logging.worker.activity</field>
         <field name="view_mode">tree,form</field>
     </record>
 
     <menuitem id="middle_logging_root_menu" 
-        name="middle logging root menu"
+        name="Middle Logging"
         sequence="1"/>
 
     <!-- <menuitem id="cats_cat_menu" 
@@ -59,19 +59,19 @@
         sequence="3"/> -->
 
     <menuitem id="middle_logging_team_activity_menu" 
-        name="Daftar aktivitas team"
+        name="Daftar Aktivitas Tim"
         parent="middle_logging_root_menu"
         action="action_list_team_activity"
         sequence="1"/>
 
     <menuitem id="middle_logging_client_feedback_menu" 
-        name="Daftar feedback client"
+        name="Daftar Feedback Client"
         parent="middle_logging_root_menu"
         action="action_list_client_feedback"
         sequence="2"/>
 
     <menuitem id="middle_logging_worker_activity_menu" 
-        name="Daftar aktivitas pekerja"
+        name="Daftar Aktivitas Pekerja"
         parent="middle_logging_root_menu"
         action="action_list_worker_activity"
         sequence="3"/>

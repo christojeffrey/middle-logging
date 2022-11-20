@@ -1,10 +1,10 @@
 # -*- coding: utf-8 -*-
 {
     'name': "Middle Logging",
-    'summary': 'Module Odoo untuk middle logging. diambil dari cats dari spek. not edited yet selain nama dan summary',
-    'description': 'Module Odoo untuk menyimpan dan menampilkan data kucing yang ada pada WillyWangky’s Pet Shop.',
+    'summary': 'Module Odoo untuk middle logging.',
+    'description': 'Module Odoo untuk menyimpan dan menampilkan data middle logging yang ada pada PT Berkah Sempurna Prima.',
     'sequence': -100,
-    'author': "Thomas The Tank Engine",
+    'author': "SI Berkahnya Sempurna",
     'category': 'Uncategorized',
     'version': '1.0',
     'depends': ['base'],
