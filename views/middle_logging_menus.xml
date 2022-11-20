@@ -30,6 +30,12 @@
         <field name="view_mode">tree,form</field>
     </record>
 
+    <record id="action_list_worker_activity" model="ir.actions.act_window">
+        <field name="name">Daftar aktivitas pekerja</field>
+        <field name="res_model">middle.logging.worker.activity</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
     <menuitem id="middle_logging_root_menu" 
         name="middle logging root menu"
         sequence="1"/>
@@ -63,4 +69,10 @@
         parent="middle_logging_root_menu"
         action="action_list_client_feedback"
         sequence="2"/>
+
+    <menuitem id="middle_logging_worker_activity_menu" 
+        name="Daftar aktivitas pekerja"
+        parent="middle_logging_root_menu"
+        action="action_list_worker_activity"
+        sequence="3"/>
 </odoo>

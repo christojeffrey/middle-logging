@@ -81,5 +81,20 @@
       </form>
     </field>
   </record>
+
+  <record model="ir.ui.view" id="middle_logging_worker_activity_form">
+    <field name="name">middle.logging.worker.activity.form</field>
+    <field name="model">middle.logging.worker.activity</field>
+    <field name="priority" eval="1"/>
+    <field name="arch" type="xml">
+      <form>
+        <sheet>
+          <group>
+             <!-- todo: add the appropriate field -->
+          </group>
+        </sheet>
+      </form>
+    </field>
+  </record>
   
 </odoo>

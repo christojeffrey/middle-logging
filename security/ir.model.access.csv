@@ -4,4 +4,5 @@ cats_cat_type_manager,Cats Cat Type Manager,model_cats_cat_type,,1,1,1,1
 middle_logging_team_manager,Middle Logging Team Manager,model_middle_logging_team,,1,1,1,1
 middle_logging_team_activity_manager,Middle Logging Team Activity Manager,model_middle_logging_team_activity,,1,1,1,1
 middle_logging_client_feedback_manager,Middle Logging Client Feedback Manager,model_middle_logging_client_feedback,,1,1,1,1
+middle_logging_worker_activity_manager,Middle Logging Worker Activity Manager,model_middle_logging_worker_activity,,1,1,1,1
 
