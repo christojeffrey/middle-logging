@@ -47,5 +47,24 @@
       </form>
     </field>
   </record>
+
+  <record model="ir.ui.view" id="middle_logging_team_activity_form">
+    <field name="name">middle.logging.team.activity.form</field>
+    <field name="model">middle.logging.team.activity</field>
+    <field name="priority" eval="1"/>
+    <field name="arch" type="xml">
+      <form>
+        <sheet>
+          <group>
+              <field name="clientSatisfactionRate"/>
+              <field name="taskWeightRate"/>
+              <field name="effectivenessRate"/>
+              <field name="effieciencyRate"/>
+              <field name="note"/>
+          </group>
+        </sheet>
+      </form>
+    </field>
+  </record>
   
 </odoo>
