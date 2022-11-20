@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
 
-  <record model="ir.ui.view" id="cats_cat_tree">
+  <!-- <record model="ir.ui.view" id="cats_cat_tree">
     <field name="name">cats.cat.tree</field>
     <field name="model">cats.cat</field>
     <field name="priority" eval="1"/>
@@ -34,7 +34,7 @@
         <field name="teamNumber"/>
       </tree>
     </field>
-  </record>
+  </record> -->
 
   <record model="ir.ui.view" id="middle_logging_teamactivity_tree">
     <field name="name">middle.logging.team.activity.tree</field>
@@ -46,7 +46,18 @@
         <field name="taskWeightRate"/>
         <field name="effectivenessRate"/>
         <field name="effieciencyRate"/>
-        <field name="note"/>
+        <field name="note"/> 
+      </tree>
+    </field>
+  </record>
+
+  <record model="ir.ui.view" id="middle_logging_client_feedback_tree">
+    <field name="name">middle.logging.client.feedback.tree</field>
+    <field name="model">middle.logging.client.feedback</field>
+    <field name="priority" eval="1"/>
+    <field name="arch" type="xml">
+      <tree>
+       <!-- todo: add the appropriate field -->
       </tree>
     </field>
   </record>

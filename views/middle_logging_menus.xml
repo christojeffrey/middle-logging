@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
-    <record id="action_list_cat" model="ir.actions.act_window">
+    <!-- <record id="action_list_cat" model="ir.actions.act_window">
         <field name="name">Daftar Kucing asdf</field>
         <field name="res_model">cats.cat</field>
         <field name="view_mode">tree,form</field>
@@ -10,13 +10,13 @@
         <field name="name">Daftar Jenis Kucing</field>
         <field name="res_model">cats.cat.type</field>
         <field name="view_mode">tree,form</field>
-    </record>
+    </record> -->
 
-    <record id="action_list_team" model="ir.actions.act_window">
+    <!-- <record id="action_list_team" model="ir.actions.act_window">
         <field name="name">Daftar Tim aasdf</field>
         <field name="res_model">middle.logging.team</field>
         <field name="view_mode">tree,form</field>
-    </record>
+    </record> -->
 
     <record id="action_list_team_activity" model="ir.actions.act_window">
         <field name="name">Daftar aktivitas Tim </field>
@@ -24,11 +24,17 @@
         <field name="view_mode">tree,form</field>
     </record>
 
+    <record id="action_list_client_feedback" model="ir.actions.act_window">
+        <field name="name">Daftar feedback client</field>
+        <field name="res_model">middle.logging.client.feedback</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
     <menuitem id="middle_logging_root_menu" 
         name="middle logging root menu"
         sequence="1"/>
 
-    <menuitem id="cats_cat_menu" 
+    <!-- <menuitem id="cats_cat_menu" 
         name="Daftar monyet"
         parent="middle_logging_root_menu"
         action="action_list_cat"
@@ -38,17 +44,23 @@
         name="Daftar Jenis Kucing hjkl"
         parent="middle_logging_root_menu"
         action="action_list_cat_type"
-        sequence="2"/>
+        sequence="2"/> -->
         
-    <menuitem id="middle_logging_team_menu" 
+    <!-- <menuitem id="middle_logging_team_menu" 
         name="Daftar Team"
         parent="middle_logging_root_menu"
         action="action_list_team"
-        sequence="3"/>
+        sequence="3"/> -->
 
     <menuitem id="middle_logging_team_activity_menu" 
         name="Daftar aktivitas team"
         parent="middle_logging_root_menu"
         action="action_list_team_activity"
-        sequence="4"/>
+        sequence="1"/>
+
+    <menuitem id="middle_logging_client_feedback_menu" 
+        name="Daftar feedback client"
+        parent="middle_logging_root_menu"
+        action="action_list_client_feedback"
+        sequence="2"/>
 </odoo>

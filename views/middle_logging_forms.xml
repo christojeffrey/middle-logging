@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
 
-  <record model="ir.ui.view" id="cats_cat_form">
+  <!-- <record model="ir.ui.view" id="cats_cat_form">
     <field name="name">cats.cat.form</field>
     <field name="model">cats.cat</field>
     <field name="priority" eval="1"/>
@@ -46,7 +46,7 @@
         </sheet>
       </form>
     </field>
-  </record>
+  </record> -->
 
   <record model="ir.ui.view" id="middle_logging_team_activity_form">
     <field name="name">middle.logging.team.activity.form</field>
@@ -61,6 +61,21 @@
               <field name="effectivenessRate"/>
               <field name="effieciencyRate"/>
               <field name="note"/>
+          </group>
+        </sheet>
+      </form>
+    </field>
+  </record>
+
+  <record model="ir.ui.view" id="middle_logging_team_activity_form">
+    <field name="name">middle.logging.client.feedback.form</field>
+    <field name="model">middle.logging.client.feedback</field>
+    <field name="priority" eval="1"/>
+    <field name="arch" type="xml">
+      <form>
+        <sheet>
+          <group>
+             <!-- todo: add the appropriate field -->
           </group>
         </sheet>
       </form>
