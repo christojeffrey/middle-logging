@@ -56,6 +56,7 @@
       <form>
         <sheet>
           <group>
+              <field name="team"/>
               <field name="clientSatisfactionRate"/>
               <field name="taskWeightRate"/>
               <field name="effectivenessRate"/>

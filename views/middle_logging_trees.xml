@@ -42,6 +42,7 @@
     <field name="priority" eval="1"/>
     <field name="arch" type="xml">
       <tree>
+        <field name="team"/>
         <field name="clientSatisfactionRate"/>
         <field name="taskWeightRate"/>
         <field name="effectivenessRate"/>
