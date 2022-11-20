@@ -32,5 +32,20 @@
       </form>
     </field>
   </record>
+
+  <record model="ir.ui.view" id="middle_logging_team_form">
+    <field name="name">middle.logging.team.form</field>
+    <field name="model">middle.logging.team</field>
+    <field name="priority" eval="1"/>
+    <field name="arch" type="xml">
+      <form>
+        <sheet>
+          <group>
+            <field name="teamNumber"/>
+          </group>
+        </sheet>
+      </form>
+    </field>
+  </record>
   
 </odoo>

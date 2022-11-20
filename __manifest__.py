@@ -10,9 +10,9 @@
     'depends': ['base'],
     'data': [
         'security/ir.model.access.csv',
-        'views/cats_menus.xml',
-        'views/cats_trees.xml',
-        'views/cats_forms.xml',
+        'views/middle_logging_menus.xml',
+        'views/middle_logging_trees.xml',
+        'views/middle_logging_forms.xml',
     ],
     'demo': [
         'demo/demo.xml',

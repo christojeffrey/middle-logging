@@ -25,4 +25,15 @@
     </field>
   </record>
   
+  <record model="ir.ui.view" id="middle_logging_team_tree">
+    <field name="name">middle.logging.team.tree</field>
+    <field name="model">middle.logging.team</field>
+    <field name="priority" eval="1"/>
+    <field name="arch" type="xml">
+      <tree>
+        <field name="teamNumber"/>
+      </tree>
+    </field>
+  </record>
+  
 </odoo>

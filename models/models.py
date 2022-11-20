@@ -24,3 +24,28 @@ class CatType(models.Model):
 
 
 
+
+class Team(models.Model):
+    _name = 'middle.logging.team'
+    _description = 'team'
+
+    teamNumber = fields.Integer(string="team number")
+
+
+  
+
+# clientSatisfactionRate, taskWeightRate, effectivenessRate, effieciencyRate, note
+# class TeamActivity(models.Model):
+#         _name = '.team_activity'
+#         _description = 'team activity'
+
+#         team = fields.Integer(string="Team Number", required=True)
+#         clientSatisfactionRate = fields.Integer(string="clientSatisfactionRate", required=True)
+#         taskWeightRate = fields.Integer(string="taskWeightRate", required=True)
+#         effectivenessRate = fields.Integer(string="effectivenessRate", required=True)
+#         effieciencyRate = fields.Integer(string="effieciencyRate", required=True)
+#         note = fields.Char(string="note", required=False)
+
+
+
+

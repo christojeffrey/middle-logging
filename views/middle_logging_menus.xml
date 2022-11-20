@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="action_list_cat" model="ir.actions.act_window">
+        <field name="name">Daftar Kucing asdf</field>
+        <field name="res_model">cats.cat</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <record id="action_list_cat_type" model="ir.actions.act_window">
+        <field name="name">Daftar Jenis Kucing</field>
+        <field name="res_model">cats.cat.type</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <record id="action_list_team" model="ir.actions.act_window">
+        <field name="name">Daftar Tim aasdf</field>
+        <field name="res_model">middle.logging.team</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem id="middle_logging_root_menu" 
+        name="middle logging root menu"
+        sequence="1"/>
+
+    <menuitem id="cats_cat_menu" 
+        name="Daftar monyet"
+        parent="middle_logging_root_menu"
+        action="action_list_cat"
+        sequence="1"/>
+
+    <menuitem id="cats_cat_type_menu" 
+        name="Daftar Jenis Kucing teaam hjkl"
+        parent="middle_logging_root_menu"
+        action="action_list_cat_type"
+        sequence="3"/>
+        
+    <menuitem id="middle_logging_tim_menu" 
+        name="Daftar Team"
+        parent="middle_logging_root_menu"
+        action="action_list_team"
+        sequence="2"/>
+</odoo>
