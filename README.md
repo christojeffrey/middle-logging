@@ -1,2 +1,3 @@
-# cats_odoo
-Module Odoo contoh untuk menyimpan daftar kucing.
+# middle_logging_odoo
+
+Module middle logging.

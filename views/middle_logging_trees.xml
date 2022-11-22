@@ -1,41 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
 
-  <!-- <record model="ir.ui.view" id="cats_cat_tree">
-    <field name="name">cats.cat.tree</field>
-    <field name="model">cats.cat</field>
-    <field name="priority" eval="1"/>
-    <field name="arch" type="xml">
-      <tree>
-        <field name="name"/>
-        <field name="color"/>
-        <field name="type"/>
-      </tree>
-    </field>
-  </record>
-
-  <record model="ir.ui.view" id="cats_cat_type_tree">
-    <field name="name">cats.cat.type.tree</field>
-    <field name="model">cats.cat.type</field>
-    <field name="priority" eval="1"/>
-    <field name="arch" type="xml">
-      <tree>
-        <field name="name"/>
-      </tree>
-    </field>
-  </record>
-  
-  <record model="ir.ui.view" id="middle_logging_team_tree">
-    <field name="name">middle.logging.team.tree</field>
-    <field name="model">middle.logging.team</field>
-    <field name="priority" eval="1"/>
-    <field name="arch" type="xml">
-      <tree>
-        <field name="teamNumber"/>
-      </tree>
-    </field>
-  </record> -->
-
   <record model="ir.ui.view" id="middle_logging_teamactivity_tree">
     <field name="name">middle.logging.team.activity.tree</field>
     <field name="model">middle.logging.team.activity</field>

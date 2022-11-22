@@ -1,78 +1,97 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
-    <!-- <record id="action_list_cat" model="ir.actions.act_window">
-        <field name="name">Daftar Kucing asdf</field>
-        <field name="res_model">cats.cat</field>
-        <field name="view_mode">tree,form</field>
+
+
+    <record id="action_list_worker_activity" model="ir.actions.act_window">
+        <field name="name">Lihat Aktivitas Pekerja</field>
+        <field name="res_model">middle.logging.worker.activity</field>
+        <field name="view_mode">tree</field>
     </record>
 
-    <record id="action_list_cat_type" model="ir.actions.act_window">
-        <field name="name">Daftar Jenis Kucing</field>
-        <field name="res_model">cats.cat.type</field>
-        <field name="view_mode">tree,form</field>
-    </record> -->
-
-    <!-- <record id="action_list_team" model="ir.actions.act_window">
-        <field name="name">Daftar Tim aasdf</field>
-        <field name="res_model">middle.logging.team</field>
-        <field name="view_mode">tree,form</field>
-    </record> -->
+    <record id="action_add_worker_activity" model="ir.actions.act_window">
+        <field name="name">Tambah Aktivitas Pekerja</field>
+        <field name="res_model">middle.logging.worker.activity</field>
+        <field name="view_mode">form</field>
+    </record>
 
     <record id="action_list_team_activity" model="ir.actions.act_window">
-        <field name="name">Daftar Aktivitas Tim </field>
+        <field name="name">Lihat Aktivitas Tim </field>
         <field name="res_model">middle.logging.team.activity</field>
-        <field name="view_mode">tree,form</field>
+        <field name="view_mode">tree</field>
+    </record>
+
+    <record id="action_add_team_activity" model="ir.actions.act_window">
+        <field name="name">Tambah Aktivitas Tim </field>
+        <field name="res_model">middle.logging.team.activity</field>
+        <field name="view_mode">form</field>
     </record>
 
     <record id="action_list_client_feedback" model="ir.actions.act_window">
-        <field name="name">Daftar Feedback Client</field>
+        <field name="name">Lihat Feedback Client</field>
         <field name="res_model">middle.logging.client.feedback</field>
-        <field name="view_mode">tree,form</field>
+        <field name="view_mode">tree</field>
     </record>
 
-    <record id="action_list_worker_activity" model="ir.actions.act_window">
-        <field name="name">Daftar Aktivitas Pekerja</field>
-        <field name="res_model">middle.logging.worker.activity</field>
-        <field name="view_mode">tree,form</field>
+    <record id="action_add_client_feedback" model="ir.actions.act_window">
+        <field name="name">Tambah Feedback Client</field>
+        <field name="res_model">middle.logging.client.feedback</field>
+        <field name="view_mode">form</field>
     </record>
+
 
     <menuitem id="middle_logging_root_menu" 
         name="Middle Logging"
         sequence="1"/>
 
-    <!-- <menuitem id="cats_cat_menu" 
-        name="Daftar monyet"
+    <menuitem id="middle_logging_worker_menu" 
+        name="Aktivitas Pekerja"
         parent="middle_logging_root_menu"
-        action="action_list_cat"
         sequence="1"/>
+    <menuitem id="middle_logging_team_menu" 
+        name="Aktivitas Tim"
+        parent="middle_logging_root_menu"
+        sequence="2"/>
+    <menuitem id="middle_logging_feedback_menu" 
+        name="Feedback Client"
+        parent="middle_logging_root_menu"
+        sequence="3"/>
 
-    <menuitem id="cats_cat_type_menu" 
-        name="Daftar Jenis Kucing hjkl"
-        parent="middle_logging_root_menu"
-        action="action_list_cat_type"
-        sequence="2"/> -->
-        
-    <!-- <menuitem id="middle_logging_team_menu" 
-        name="Daftar Team"
-        parent="middle_logging_root_menu"
-        action="action_list_team"
-        sequence="3"/> -->
-
-    <menuitem id="middle_logging_team_activity_menu" 
-        name="Daftar Aktivitas Tim"
-        parent="middle_logging_root_menu"
-        action="action_list_team_activity"
+    <menuitem id="middle_logging_list_worker_activity_menu" 
+        name="Lihat Aktivitas Pekerja"
+        parent="middle_logging_worker_menu"
+        action="action_list_worker_activity"
+        groups="middle_logging_manager,middle_logging_client"
         sequence="1"/>
-
-    <menuitem id="middle_logging_client_feedback_menu" 
-        name="Daftar Feedback Client"
-        parent="middle_logging_root_menu"
-        action="action_list_client_feedback"
+    <menuitem id="middle_logging_add_worker_activity_menu" 
+        name="Tambah Aktivitas Pekerja"
+        parent="middle_logging_worker_menu"
+        action="action_add_worker_activity"
+        groups="middle_logging_leader"
         sequence="2"/>
 
-    <menuitem id="middle_logging_worker_activity_menu" 
-        name="Daftar Aktivitas Pekerja"
-        parent="middle_logging_root_menu"
-        action="action_list_worker_activity"
-        sequence="3"/>
+    <menuitem id="middle_logging_list_team_activity_menu" 
+        name="Lihat Aktivitas Tim"
+        parent="middle_logging_team_menu"
+        action="action_list_team_activity"
+        groups="middle_logging_manager,middle_logging_client"
+        sequence="1"/>
+    <menuitem id="middle_logging_add_team_activity_menu" 
+        name="Tambah Aktivitas Tim"
+        parent="middle_logging_team_menu"
+        action="action_add_team_activity"
+        groups="middle_logging_supervisor"
+        sequence="2"/>
+
+    <menuitem id="middle_logging_list_client_feedback_menu" 
+        name="Lihat Feedback Client"
+        parent="middle_logging_feedback_menu"
+        action="action_list_client_feedback"
+        groups="middle_logging_manager"
+        sequence="1"/>
+    <menuitem id="middle_logging_add_client_feedback_menu" 
+        name="Tambah Feedback Client"
+        parent="middle_logging_feedback_menu"
+        action="action_add_client_feedback"
+        groups="middle_logging_supervisor"
+        sequence="2"/>
 </odoo>

@@ -9,6 +9,7 @@
     'version': '1.0',
     'depends': ['base'],
     'data': [
+        'security/middle_logging_security.xml',
         'security/ir.model.access.csv',
         'views/middle_logging_menus.xml',
         'views/middle_logging_trees.xml',
