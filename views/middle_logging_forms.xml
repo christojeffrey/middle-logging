@@ -55,5 +55,26 @@
       </form>
     </field>
   </record>
+
+  <record model="ir.ui.view" id="middle_logging_statistics_form">
+    <field name="name">middle.logging.statistics.form</field>
+    <field name="model">middle.logging.statistics</field>
+    <field name="priority" eval="1"/>
+    <field name="arch" type="xml">
+      <form>
+        <sheet>
+          <group>
+            <field name="teamRating"/>
+            <field name="mitraActivity"/>
+            <field name="teamActivity"/>
+            <field name="clientSatisfaction"/>
+            <field name="averageTime"/>
+            <field name="bestJob"/>
+            <field name="worstJob"/>
+          </group>
+        </sheet>
+      </form>
+    </field>
+  </record>
   
 </odoo>

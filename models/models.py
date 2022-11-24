@@ -10,7 +10,9 @@ class TeamActivity(models.Model):
         team = fields.Selection(selection=[
             ('1', 'tim 1'), ('2', 'tim 2')], string="team", required=True)
             
-        clientSatisfactionRate = fields.Integer(string="clientSatisfactionRate", required=True)
+        clientSatisfactionRate = fields.Selection(selection=[
+            ('5', 'Sangat Puas'), ('4', 'Puas'), ('3', 'Biasa Saja'), ('2', 'Tidak Puas'), ('1', 'Sangat Tidak Puas'), 
+        ], string="Mood", required=True)
         taskWeightRate = fields.Integer(string="taskWeightRate", required=True)
         effectivenessRate = fields.Integer(string="effectivenessRate", required=True)
         effieciencyRate = fields.Integer(string="effieciencyRate", required=True)

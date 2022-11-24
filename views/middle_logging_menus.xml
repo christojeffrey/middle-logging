@@ -41,7 +41,7 @@
     <record id="action_statistics" model="ir.actions.act_window">
         <field name="name">Statistik</field>
         <field name="res_model">middle.logging.statistics</field>
-        <field name="view_mode">tree</field>
+        <field name="view_mode">tree,form</field>
     </record>
 
     <menuitem id="middle_logging_root_menu" 
@@ -64,6 +64,7 @@
         name="Statistik"
         parent="middle_logging_root_menu"
         action="action_statistics"
+        groups="middle_logging_manager"
         sequence="4"/>
 
     <menuitem id="middle_logging_list_worker_activity_menu" 
