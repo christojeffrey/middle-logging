@@ -38,6 +38,11 @@
         <field name="view_mode">form</field>
     </record>
 
+    <record id="action_statistics" model="ir.actions.act_window">
+        <field name="name">Statistik</field>
+        <field name="res_model">middle.logging.statistics</field>
+        <field name="view_mode">tree</field>
+    </record>
 
     <menuitem id="middle_logging_root_menu" 
         name="Middle Logging"
@@ -55,6 +60,11 @@
         name="Feedback Client"
         parent="middle_logging_root_menu"
         sequence="3"/>
+    <menuitem id="middle_logging_statistics_menu" 
+        name="Statistik"
+        parent="middle_logging_root_menu"
+        action="action_statistics"
+        sequence="4"/>
 
     <menuitem id="middle_logging_list_worker_activity_menu" 
         name="Lihat Aktivitas Pekerja"

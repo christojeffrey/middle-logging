@@ -8,15 +8,13 @@ class TeamActivity(models.Model):
 
         # fake foreign key
         team = fields.Selection(selection=[
-            ('1', 'tim 1'), ('2', 'tim 2'), ('3', 'tim 3'), ('4', 'tim 4'), ('5', 'tim 5')], string="team", required=True)
+            ('1', 'tim 1'), ('2', 'tim 2')], string="team", required=True)
             
         clientSatisfactionRate = fields.Integer(string="clientSatisfactionRate", required=True)
         taskWeightRate = fields.Integer(string="taskWeightRate", required=True)
         effectivenessRate = fields.Integer(string="effectivenessRate", required=True)
         effieciencyRate = fields.Integer(string="effieciencyRate", required=True)
         note = fields.Char(string="note", required=False)
-
-
 
 class ClientFeedback(models.Model):
         _name = 'middle.logging.client.feedback'
@@ -47,3 +45,22 @@ class WorkerActivity(models.Model):
     rate = fields.Integer(string="Rate", required=True)
     note = fields.Char(string="Note", required=False)
 
+# 1. tim ini ratingnya berapa
+# 2. hari ini di mitra ini ngerjain apa aja
+# 3. hari ini di tim di mitra ini ngerjain apa aja
+# 4. seberapa puas client di mitra tertentu
+# 5. average waktu yang dibutuhakn buat suatu pekerjaan
+# 6. pekerjaan mana yang paling dapet tingkat kepuasan paling tinggi
+# 7. pekerjaan mana yang paling dapet tingkat kepuasan paling rendah
+class Statistics(models.Model):
+    _name = "middle.logging.statistics"
+    _description = "statistik"
+
+    # data
+    teamRating = fields.Char(string="Team Rating", required=False)        
+    mitraActivity = fields.Char(string="Mitra Activity Today", required=False)
+    teamActivity = fields.Char(string="Team Activity Today", required=False)
+    clientSatisfaction = fields.Char(string="Mitra Satisfaction", required=False)
+    averageTime = fields.Char(string="Average Time", required=False)
+    bestJob = fields.Char(string="Best Job", required=False)
+    worstJob = fields.Char(string="Worst Job", required=False)

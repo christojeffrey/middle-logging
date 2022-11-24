@@ -45,4 +45,20 @@
     </field>
   </record>
   
+  <record model="ir.ui.view" id="middle_logging_statistics_tree">
+    <field name="name">middle.logging.statistics.tree</field>
+    <field name="model">middle.logging.statistics</field>
+    <field name="priority" eval="1"/>
+    <field name="arch" type="xml">
+      <tree>
+          <field name="teamRating"/>
+          <field name="mitraActivity"/>
+          <field name="teamActivity"/>
+          <field name="clientSatisfaction"/>
+          <field name="averageTime"/>
+          <field name="bestJob"/>
+          <field name="worstJob"/>
+      </tree>
+    </field>
+  </record>
 </odoo>
